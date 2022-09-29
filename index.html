@@ -5,13 +5,246 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
+      <!-- Link Font Google -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Varela+Round&display=swap"
+         rel="stylesheet">
+
+
       <!-- Link play cdn tailwindcss -->
       <script src="https://cdn.tailwindcss.com"></script>
 
-      <!-- Link CSS -->
-      <link href="style.css" rel="stylesheet" type="text/tailwindcss">
+      <!-- add atributes to tailwindcss -->
+      <script>
+         tailwind.config = {
+            theme: {
+               extend: {
+                  fontFamily: {
+                     varela: ['Varela Round'],
+                     plusRounded: ['M PLUS Rounded 1c']
+                  }
+               }
+            }
+         }
+      </script>
    </head>
-   <body>
-      <h1>hello everyboddy</h1>
+
+   <body class="bg-stone-200">
+      
+      <!-- Header -->
+      <header class="headerAwal  w-full h-full bg-slate-900 rounded-b-lg shadow-md shadow-slate-600">
+         <div class="p-5">
+            <img class="rounded-full shadow-md shadow-gray-200 w-16" src="./assets/icon/icon.png" alt="Logo Icon">
+            <h1 class="text-[25px] text-white font-varela pt-6">Halo, Saya Zuleriqhbal Hendri</h1>
+            <p class="text-1px text-amber-50 font-plusRounded py-3">Saya saat ini adalah bagian dari study Independet Ruangguru CAMP, asal saya dari riau dan 
+               saya mahasiswa tingkat akhir.
+            </p>
+         </div>
+      </header>
+
+      <!-- Latar Pendidikan -->
+      <div class="container w-full h-full  py-4 pl-4 font-bold font-varela">
+         <h1 class="text-3xl pb-2">Latar Pendidikan</h1>
+         <div class="pt-3 pl-5 w-3/4 mx-au  rounded-xl shadow-lg">
+            <h3 class="text-md">SDN 010 Pangkalan Kerinci</h3>
+            <p class="text-[14.7px] p-2">(2007-2012)</p>
+         </div>
+
+         <div class="pt-3 pl-5 w-3/4 mx-au  rounded-xl shadow-lg">
+            <h3 class="text-md">SMPN 2 Pangkalan Kerinci</h3>
+            <p class="text-[14.7px] p-2">(2013-2016)</p>
+         </div>
+
+         <div class="pt-3 pl-5 w-3/4 mx-au  rounded-xl shadow-lg">
+            <h3 class="text-md">SMAS Kartika 1-4 Pematangsiantar</h3>
+            <p class="text-[14.7px] p-2">(2016-2019)</p>
+         </div>
+
+         <div class="pt-3 pl-5 w-3/4 mx-au  rounded-xl shadow-lg">
+            <h3 class="text-md">Universitas Islam Riau</h3>
+            <p class="text-[14.7px] p-2">(2019-Now)</p>
+         </div>
+      </div>
+
+      <!-- Main -->
+      <main class="w-full">
+         <!-- Card Image -->
+         <div class="w-full mx-auto p-4">
+            <article class="container outline outline-2 outline-slate-600 rounded-md bg-slate-800
+                           shadow-xl shadow-slate-800">
+               <img class="h-[200px] w-full object-cover"
+                  src="https://images.unsplash.com/photo-1635963731289-79a5e9f31b10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                  alt="blur bicycle" />
+               <h3 class="pt-2 pl-1 text-gray-400 font-bold font-varela text-2xl">Bersepeda</h3>
+               <p class="text-gray-100 font-semibold pl-1 pb-3">
+                  Bersepeda adalah hobi yang saya suka di sore hari. biasanya jika saya suntuk saat belajar
+                  saya akan bersepeda di lingkungan komplek perumahan saya.
+               </p>
+            </article>
+         </div>
+
+         <div class="w-full mx-auto p-4">
+            <article class="container outline outline-2 outline-slate-600 rounded-md bg-slate-800
+                                    shadow-xl shadow-slate-800">
+               <img class="h-[200px] w-full object-cover"
+                  src="https://images.unsplash.com/photo-1530549387789-4c1017266635?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                  alt="swimming" />
+               <h3 class="pt-2 pl-1 text-gray-400 font-bold font-varela text-2xl">Berenang</h3>
+               <p class="text-gray-100 font-semibold pl-1 pb-3">
+                  Berenang adalah kegiatan yang saya lakukan tiap hari sabtu atau hari minggu. Namun belakangan ini saya 
+                  udah jarang buat pergi berenang.
+               </p>
+            </article>
+         </div>
+
+         <div class="w-full mx-auto p-4">
+            <article class="container outline outline-2 outline-slate-600 rounded-md bg-slate-800
+                                             shadow-xl shadow-slate-800">
+               <img class="h-[200px] w-full object-cover"
+                  src="https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                  alt="reading-book" />
+               <h3 class="pt-2 pl-1 text-gray-400 font-bold font-varela text-2xl">Membaca</h3>
+               <p class="text-gray-100 font-semibold pl-1 pb-3">
+                  Membaca adalah salah satu kegiatan yang saya sukai paling saya sukai diantara
+                  kegiatan saya lainnya, karena membaca membuat saya mengetahui banyak hal dan 
+                  terutama tentang kehidupan sosial.
+               </p>
+            </article>
+         </div>
+
+         <div class="w-full mx-auto p-4">
+            <article class="container outline outline-2 outline-slate-600 rounded-md bg-slate-800
+                                                      shadow-xl shadow-slate-800">
+               <img class="h-[200px] w-full object-cover"
+                  src="https://media.istockphoto.com/photos/nineteen-year-old-teenage-boy-using-a-skipping-rope-in-a-public-park-picture-id1410836081?b=1&k=20&m=1410836081&s=170667a&w=0&h=YQz6kCEGQM0-LDLLMDl2SnkKmP271naBtQfHm-ohvXU="
+                  alt="blur bicycle" />
+               <h3 class="pt-2 pl-1 text-gray-400 font-bold font-varela text-2xl">Skipping</h3>
+               <p class="text-gray-100 font-semibold pl-1 pb-3">
+                  Ketika saya tidak ingin keluar sore untuk berlari saya akan olahraga dirumah
+                  dan biasanya olahraga itu adalah Skipping.
+               </p>
+            </article>
+         </div>
+
+         <div class="w-full mx-auto p-4">
+            <article class="container outline outline-2 outline-slate-600 rounded-md bg-slate-800
+                                                      shadow-xl shadow-slate-800">
+               <img class="h-[200px] w-full object-cover"
+                  src="https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                  alt="blur bicycle" />
+               <h3 class="pt-2 pl-1 text-gray-400 font-bold font-varela text-2xl">Ngoding</h3>
+               <p class="text-gray-100 font-semibold pl-1 pb-3">
+                  Ngoding adalah aktivitas prioritas saya saat ini, saya banyak menghabiskan waktu untuk
+                  aktivitas yang satu ini demi karir saya dimasa depan.
+               </p>
+            </article>
+         </div>
+
+         <div class="w-full mx-auto p-4">
+            <article class="container outline outline-2 outline-slate-600 rounded-md bg-slate-800
+                                                               shadow-xl shadow-slate-800">
+               <img class="h-[200px] w-full object-cover"
+                  src="https://images.unsplash.com/photo-1495175448924-1d9a30c90a42?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+                  alt="listening music" />
+               <h3 class="pt-2 pl-1 text-gray-400 font-bold font-varela text-2xl">Mendengarkan Music</h3>
+               <p class="text-gray-100 font-semibold pl-1 pb-3">
+                  Saya rasa hampir semua orang sangat suka mendengarkan musik termasuk saya sendiri
+                  biasanya genre music yang saya sukai pop, calm and classic.
+               </p>
+            </article>
+         </div>
+
+         <div class="w-full mx-auto p-4">
+            <article class="container outline outline-2 outline-slate-600 rounded-md bg-slate-800
+                                                               shadow-xl shadow-slate-800">
+               <img class="h-[200px] w-full object-cover"
+                  src="https://images.unsplash.com/photo-1630610280030-da8fbc7ca25a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                  alt="table tennis" />
+               <h3 class="pt-2 pl-1 text-gray-400 font-bold font-varela text-2xl">Tennis Meja</h3>
+               <p class="text-gray-100 font-semibold pl-1 pb-3">
+                  Dulu saya sering bermain tennis meja namun saat ini sangat jarang karena tidak memiliki teman bermain
+                  dan tennis meja adalah olahraga kesukaan saya.
+               </p>
+            </article>
+         </div>
+
+         <div class="w-full mx-auto p-4">
+            <article class="container outline outline-2 outline-slate-600 rounded-md bg-slate-800
+                                                               shadow-xl shadow-slate-800">
+               <img class="h-[200px] w-full object-cover"
+                  src="https://images.unsplash.com/photo-1548328928-34db1c5fcc1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8eW91dHViZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+                  alt="blur bicycle" />
+               <h3 class="pt-2 pl-1 text-gray-400 font-bold font-varela text-2xl">Nonton YT</h3>
+               <p class="text-gray-100 font-semibold pl-1 pb-3">
+                  Biasanya kalau lagi boring nonton yt solusinya dan yang saya tonton biasanya adalah
+                  video random.
+               </p>
+            </article>
+         </div>
+
+         <div class="w-full mx-auto p-4">
+            <article class="container outline outline-2 outline-slate-600 rounded-md bg-slate-800
+                                                               shadow-xl shadow-slate-800">
+               <img class="h-[200px] w-full object-cover"
+                  src="https://images.unsplash.com/photo-1630420598913-44208d36f9af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80"
+                  alt="bermain futsal" />
+               <h3 class="pt-2 pl-1 text-gray-400 font-bold font-varela text-2xl">Ngefutsal</h3>
+               <p class="text-gray-100 font-semibold pl-1 pb-3">
+                  Sebenarnya saya ngak bisa bisa amat buat bermain futsal tapi saya sering bermain
+                  jika temen-temen saya dikampus ngajak bermain.
+               </p>
+            </article>
+         </div>
+
+         <div class="w-full mx-auto p-4">
+            <article class="container outline outline-2 outline-slate-600 rounded-md bg-slate-800
+                                                               shadow-xl shadow-slate-800">
+               <img class="h-[200px] w-full object-cover"
+                  src="https://images.unsplash.com/photo-1577471488278-16eec37ffcc2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                  alt="bermain basket" />
+               <h3 class="pt-2 pl-1 text-gray-400 font-bold font-varela text-2xl">Basketball</h3>
+               <p class="text-gray-100 font-semibold pl-1 pb-3">
+                  Udah lama sih ngak main olahraga yang satu ini saya rasa untuk saat ini saya udah ngak bisa 
+                  karena udah ngak pernah aja lagi buat main.
+               </p>
+            </article>
+         </div>
+
+         <div class="w-full mx-auto p-4">
+            <article class="container outline outline-2 outline-slate-600 rounded-md bg-slate-800
+                                                               shadow-xl shadow-slate-800">
+               <img class="h-[200px] w-full object-cover"
+                  src="https://images.unsplash.com/photo-1547592180-85f173990554?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                  alt="Cooking" />
+               <h3 class="pt-2 pl-1 text-gray-400 font-bold font-varela text-2xl">Memasak</h3>
+               <p class="text-gray-100 font-semibold pl-1 pb-3">
+                  Yap, saya sangat suka masak apalagi masak yang berbau roti rotian dan sayur sayuran
+                  kayak sop gitu, asli aku suka sih masak klau waktu luang.
+               </p>
+            </article>
+         </div>
+
+         <div class="w-full mx-auto p-4">
+            <article class="container outline outline-2 outline-slate-600 rounded-md bg-slate-800
+                                                               shadow-xl shadow-slate-800">
+               <img class="h-[200px] w-full object-cover"
+                  src="https://images.unsplash.com/photo-1664391296707-570a0cb4ec76?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=366&q=80"
+                  alt="Tantangan" />
+               <h3 class="pt-2 pl-1 text-gray-400 font-bold font-varela text-2xl">Tantangan</h3>
+               <p class="text-gray-100 font-semibold pl-1 pb-3">
+                  Terakhir saya sangat suka dengan sebuah tantangan dan belajar hal hal baru adalah 
+                  sebuah dopamin yang menyenangkan.
+               </p>
+            </article>
+         </div>
+
+      </main>
+
+      <footer class="w-full block text-center p-4 bg-slate-800 text-white
+                     font-varela rounded-t-lg">
+         Copyright &copy; Zuleriqhbal Hendri
+      </footer>
+      
    </body>
 </html>
